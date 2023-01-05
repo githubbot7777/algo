@@ -22,6 +22,7 @@ void toplogical() {
     {
         int cur = q.front();
         q.pop();
+        result.push_back(cur);
         for (int i : adj[cur])
         {
             in_degree[i]--;
